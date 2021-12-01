@@ -17,8 +17,6 @@ public class JpaMemberRepository implements MemberRepository{
     @Override
     public Member save(Member member) {
         em.persist(member);
-        System.out.println(member.getId());
-        System.out.println(member.getName());
         return member;
     }
 
